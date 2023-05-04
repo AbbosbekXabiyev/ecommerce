@@ -1,8 +1,13 @@
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import HomePage from "../containers/HomePage";
 
 function App() {
   return (
-    <>App</>
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </>
   );
 }
 
